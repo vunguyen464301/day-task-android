@@ -1,11 +1,11 @@
-package com.example.todo_list;
+package com.android_app.todo_list;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.todo_list.databinding.ActivitySignInBinding;
+import com.android_app.todo_list.databinding.ActivitySignInBinding;
 
 public class SignIn extends AppCompatActivity {
 

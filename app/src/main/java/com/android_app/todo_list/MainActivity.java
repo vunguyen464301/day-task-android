@@ -1,4 +1,4 @@
-package com.example.todo_list;
+package com.android_app.todo_list;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.todo_list.databinding.ActivityMainBinding;
+import com.android_app.todo_list.databinding.ActivityMainBinding;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.test_android'
+    namespace 'com.android_app.todo_list'
     compileSdk 33
 
     defaultConfig {

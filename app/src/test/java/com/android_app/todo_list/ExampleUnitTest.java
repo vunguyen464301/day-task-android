@@ -1,4 +1,4 @@
-package com.example.todo_list;
+package com.android_app.todo_list;
 
 import org.junit.Test;
 
