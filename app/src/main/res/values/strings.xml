@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Todo List Android</string>
+    <string name="sign_in">SignIn</string>
+</resources>
