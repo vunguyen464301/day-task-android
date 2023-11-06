@@ -9,15 +9,15 @@ import com.android_app.todo_list.databinding.ActivitySignInBinding;
 
 public class SignIn extends AppCompatActivity {
 
-    private ActivitySignInBinding binding;
+  private ActivitySignInBinding binding;
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+  @Override
+  protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
 
-        binding = ActivitySignInBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+    binding = ActivitySignInBinding.inflate(getLayoutInflater());
+    setContentView(binding.getRoot());
 
 
-    }
+  }
 }
