@@ -1,4 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Todo List Android</string>
-    <string name="sign_in">SignIn</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_vietnamese" translatable="false">Tiếng Việt</string>
+    <string name="sign_in">Sign In</string>
+    <string name="let_start">Let\'s start</string>
+    <string-array name="language_names">
+        <item>@string/language_english</item>
+        <item>@string/language_vietnamese</item>
+    </string-array>
+    <string name="text_main">Manage your Task with</string>
+    <string name="text_main_subribe">DayTask</string>
 </resources>

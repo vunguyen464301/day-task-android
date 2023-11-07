@@ -2,12 +2,10 @@ package com.android_app.todo_list;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +13,6 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
 
 import com.android_app.todo_list.databinding.ActivityMainBinding;
-import com.android_app.todo_list.databinding.ContentMainBinding;
 
 import android.content.Intent;
 
@@ -27,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-//        setContentView(R.layout);
+    //setContentView(R.layout);
     binding = ActivityMainBinding.inflate(getLayoutInflater());
 
     context = MainActivity.this; // You can also use 'this' if you're in an Activity
@@ -37,24 +34,28 @@ public class MainActivity extends AppCompatActivity {
     setContentView(binding.getRoot());
     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
-    String fullText = "Manage your \nTask with \n";
-    String primaryText = "DayTask";
+    textMain();
+    buttonStart();
+
+  }
+  private void textMain(){
+    String fullText = resources.getString(R.string.text_main) + " ";
+    String primaryText = resources.getString(R.string.text_main_subribe);
     int primaryColor = ContextCompat.getColor(context, R.color.primary);
     SpannableString spannableString = new SpannableString(fullText + primaryText);
-
-    // Set the color for the "colored" part
     ForegroundColorSpan colorSpan = new ForegroundColorSpan(primaryColor);
     spannableString.setSpan(colorSpan, fullText.length(), fullText.length() + primaryText.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
 
     binding.includeContent.textLogo.setText(spannableString);
-    binding.includeContent.includeButton.buttonStart.setText("Let's Start");
+  }
 
-    binding.includeContent.includeButton.buttonStart.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, SignIn.class);
-        startActivity(intent);
-      }
+   private void buttonStart(){
+    // Set the color for the "colored" part
+    String startString = resources.getString(R.string.let_start);
+    binding.includeContent.includeButton.buttonStart.setText(startString);
+    binding.includeContent.includeButton.buttonStart.setOnClickListener(v -> {
+      Intent intent = new Intent(MainActivity.this, SignIn.class);
+      startActivity(intent);
     });
   }
 
