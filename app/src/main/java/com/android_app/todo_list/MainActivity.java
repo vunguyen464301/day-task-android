@@ -21,7 +21,6 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
   private ActivityMainBinding binding;
-  private ContentMainBinding contentMainBinding; // Declare the binding for the included layout
   private Context context;
   private Resources resources;
 
@@ -29,9 +28,7 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 //        setContentView(R.layout);
-
     binding = ActivityMainBinding.inflate(getLayoutInflater());
-    contentMainBinding = ContentMainBinding.bind(binding.getRoot());
 
     context = MainActivity.this; // You can also use 'this' if you're in an Activity
     resources = context.getResources();
@@ -49,9 +46,10 @@ public class MainActivity extends AppCompatActivity {
     ForegroundColorSpan colorSpan = new ForegroundColorSpan(primaryColor);
     spannableString.setSpan(colorSpan, fullText.length(), fullText.length() + primaryText.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
 
-    contentMainBinding.textLogo.setText(spannableString);
+    binding.includeContent.textLogo.setText(spannableString);
+    binding.includeContent.includeButton.buttonStart.setText("Let's Start");
 
-    contentMainBinding.buttonStart.setOnClickListener(new View.OnClickListener() {
+    binding.includeContent.includeButton.buttonStart.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         Intent intent = new Intent(MainActivity.this, SignIn.class);
