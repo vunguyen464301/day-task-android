@@ -1,29 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  style="@style/padding_content"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:orientation="vertical">
 
-  <TextView
-    android:id="@+id/text1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="hello" />
-
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:layout_weight="1"
     android:orientation="vertical">
 
-    <Button
-      android:id="@+id/buttonLogin"
-      android:layout_width="500px"
-      android:layout_height="100px"
-      android:background="#FF3700B3"
-      android:text="Click Me" />
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:layout_marginVertical="50px"
+      android:layout_weight="1"
+      android:scaleType="fitXY"
+      android:src="@drawable/image_main" />
+
+    <TextView
+      android:id="@+id/text_logo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:lineHeight="160px"
+      android:text="Manage your \nTask with \nDayTask"
+      android:textSize="170px"
+      android:textStyle="bold" />
   </LinearLayout>
 
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="80px">
+
+    <Button
+      android:id="@+id/buttonStart"
+      android:layout_width="match_parent"
+      android:layout_height="63dp"
+      android:background="@color/primary"
+      android:text="Let's Start"
+      android:textColor="@color/dark"
+      android:textStyle="normal" />
+  </LinearLayout>
 
 </LinearLayout>
 

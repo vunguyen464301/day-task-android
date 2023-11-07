@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="margin_content">
+    <item name="marginHorizontal">50px</item>
+  </style>
+
+  <style name="padding_content">
+    <item name="android:paddingLeft">50px</item>
+    <item name="android:paddingRight">50px</item>
+  </style>
+
+  <style name="padding_top_content">
+    <item name="android:paddingTop">50px</item>
+  </style>
+
+  <style name="padding_header">
+    <item name="android:paddingTop">50px</item>
+    <item name="android:paddingLeft">50px</item>
+    <item name="android:paddingRight">50px</item>
+  </style>
+</resources>

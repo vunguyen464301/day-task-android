@@ -33,10 +33,11 @@ android {
     main {
       res.srcDirs =
           [
+              'src/main/res',
               'src/main/res/layouts/',
               'src/main/res/layouts/main',
               'src/main/res/layouts/sign-in',
-              'src/main/res'
+
           ]
     }
   }
