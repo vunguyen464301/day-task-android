@@ -7,7 +7,7 @@ android {
   compileSdk 33
 
   defaultConfig {
-    applicationId "com.example.test_android"
+    applicationId "com.android_app.todo_list"
     minSdk 24
     targetSdk 33
     versionCode 1
