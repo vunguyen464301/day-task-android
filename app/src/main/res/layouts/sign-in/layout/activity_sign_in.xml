@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   style="@style/padding_content"
   android:layout_width="match_parent"
@@ -12,4 +13,5 @@
   <include
     android:id="@+id/content"
     layout="@layout/content_sign_in" />
+
 </LinearLayout>

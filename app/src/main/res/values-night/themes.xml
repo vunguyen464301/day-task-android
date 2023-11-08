@@ -12,12 +12,12 @@
     <!-- Status bar color. -->
     <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     <!-- Customize your theme here. -->
+    <item name="android:background">@color/dark</item>
+    <item name="android:textColor">@color/white</item>
   </style>
   <!-- Base application theme. -->
   <style name="Base.Theme.DayTaskAndroid" parent="Theme.Material3.DayNight.NoActionBar">
     <!-- Customize your dark theme here. -->
     <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-    <item name="android:background">@color/dark</item>
-    <item name="android:textColor">@color/light</item>
   </style>
 </resources>
