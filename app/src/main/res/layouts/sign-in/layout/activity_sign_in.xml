@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  style="@style/padding_content"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical">
+  android:layout_height="match_parent">
 
-  <include
-    android:id="@+id/header"
-    layout="@layout/header_sign_in" />
+  <LinearLayout
+    style="@style/padding_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-  <include
-    android:id="@+id/content"
-    layout="@layout/content_sign_in" />
+    <include
+      android:id="@+id/header"
+      layout="@layout/header_sign_in" />
 
-</LinearLayout>
+    <include
+      android:id="@+id/content"
+      layout="@layout/content_sign_in" />
+
+  </LinearLayout>
+
+</ScrollView>
+
