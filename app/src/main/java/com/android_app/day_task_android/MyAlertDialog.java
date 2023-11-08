@@ -1,4 +1,4 @@
-package com.android_app.todo_list;
+package com.android_app.day_task_android;
 
 import android.app.AlertDialog;
 import android.content.Context;

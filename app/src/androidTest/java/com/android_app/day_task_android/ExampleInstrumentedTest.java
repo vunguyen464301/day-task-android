@@ -1,4 +1,4 @@
-package com.android_app.todo_list;
+package com.android_app.day_task_android;
 
 import android.content.Context;
 
@@ -17,10 +17,10 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
-    @Test
-    public void useAppContext() {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.android_app.todo_list", appContext.getPackageName());
-    }
+  @Test
+  public void useAppContext() {
+    // Context of the app under test.
+    Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+    assertEquals("com.android_app.day_task_android", appContext.getPackageName());
+  }
 }

@@ -9,7 +9,7 @@
     android:id="@+id/buttonPrimary"
     android:layout_width="match_parent"
     android:layout_height="63dp"
-    android:background="@color/primary"
+    android:backgroundTint="@color/primary"
     android:textColor="@color/dark"
     android:textStyle="bold"  />
 </LinearLayout>

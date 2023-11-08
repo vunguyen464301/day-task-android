@@ -1,28 +1,38 @@
-package com.android_app.todo_list;
+package com.android_app.day_task_android;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.view.View;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
+import androidx.core.view.WindowCompat;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
-import com.android_app.todo_list.databinding.ActivityMainBinding;
+import com.android_app.day_task_android.databinding.ActivityMainBinding;
 
-import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
+
   private ActivityMainBinding binding;
   private Context context;
   private Resources resources;
 
   @Override
-  protected void onCreate(@Nullable Bundle savedInstanceState) {
+  protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     //setContentView(R.layout);
     binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -46,17 +56,18 @@ public class MainActivity extends AppCompatActivity {
     ForegroundColorSpan colorSpan = new ForegroundColorSpan(primaryColor);
     spannableString.setSpan(colorSpan, fullText.length(), fullText.length() + primaryText.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
 
-    binding.includeContent.textLogo.setText(spannableString);
+    binding.content.textLogo.setText(spannableString);
   }
 
-   private void bindingButtonStart(){
-    // Set the color for the "colored" part
+  private void bindingButtonStart(){
+  // Set the color for the "colored" part
     String startString = resources.getString(R.string.main_let_start);
-    binding.includeContent.includeButton.buttonPrimary.setText(startString);
-    binding.includeContent.includeButton.buttonPrimary.setOnClickListener(v -> {
+    binding.content.includeButton.buttonPrimary.setText(startString);
+    binding.content.includeButton.buttonPrimary.setOnClickListener(v -> {
       Intent intent = new Intent(MainActivity.this, SignIn.class);
       startActivity(intent);
     });
   }
+
 
 }

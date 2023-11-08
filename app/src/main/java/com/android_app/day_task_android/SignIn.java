@@ -1,4 +1,4 @@
-package com.android_app.todo_list;
+package com.android_app.day_task_android;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -6,14 +6,14 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android_app.todo_list.databinding.ActivitySignInBinding;
-import com.android_app.todo_list.databinding.ContentSignInBinding;
+import com.android_app.day_task_android.databinding.ActivitySignInBinding;
+import com.android_app.day_task_android.databinding.ContentSignInBinding;
+
 
 public class SignIn extends AppCompatActivity {
 
@@ -67,7 +67,7 @@ public class SignIn extends AppCompatActivity {
   @SuppressLint("UseCompatLoadingForDrawables")
   private void bindingButtonGoogle() {
     String text = resources.getString(R.string.sign_in_google);
-   Drawable drawable = resources.getDrawable(R.drawable.google_icon, context.getTheme());
+    Drawable drawable = resources.getDrawable(R.drawable.google_icon, context.getTheme());
     contentBinding.buttonGoogle.iconView.setImageDrawable(drawable);
     contentBinding.buttonGoogle.textView.setText(text);
     contentBinding.buttonGoogle.button.setOnClickListener(v->{
