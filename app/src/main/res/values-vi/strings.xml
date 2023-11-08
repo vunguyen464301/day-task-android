@@ -14,4 +14,7 @@
   <string name="sign_in_do_not_have_an_account">Không có tài khoản?</string>
   <string name="sign_up">Đăng Kí</string>
   <string name="main_text_welcome_subscribe">DayTask</string>
+  <string name="ok">Đồng ý</string>
+  <string name="app_comming_soon">Sắp ra mắt</string>
+  <string name="app_notification">Thông báo</string>
 </resources>

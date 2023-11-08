@@ -2,9 +2,11 @@ package com.android_app.todo_list;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -57,23 +59,29 @@ public class SignIn extends AppCompatActivity {
     String text = resources.getString(R.string.sign_in);
     contentBinding.buttonSignIn.buttonPrimary.setText(text);
     contentBinding.buttonSignIn.buttonPrimary.setOnClickListener(v -> {
+      String title=resources.getString(R.string.app_notification);
+      String message=resources.getString(R.string.app_comming_soon);
+      MyAlertDialog.showAlertDialog(context,title,message);
     });
   }
   @SuppressLint("UseCompatLoadingForDrawables")
   private void bindingButtonGoogle() {
     String text = resources.getString(R.string.sign_in_google);
    Drawable drawable = resources.getDrawable(R.drawable.google_icon, context.getTheme());
-
     contentBinding.buttonGoogle.iconView.setImageDrawable(drawable);
     contentBinding.buttonGoogle.textView.setText(text);
     contentBinding.buttonGoogle.button.setOnClickListener(v->{
 
+      String title=resources.getString(R.string.app_notification);
+      String message=resources.getString(R.string.app_comming_soon);
+      MyAlertDialog.showAlertDialog(context,title,message);
     });
   }
 
   private void bindingButtonSignUp() {
     contentBinding.buttonSignUp.setOnClickListener(v -> {
-
+      Intent intent=new Intent(SignIn.this,SignUp.class);
+      startActivity(intent);
     });
   }
 }

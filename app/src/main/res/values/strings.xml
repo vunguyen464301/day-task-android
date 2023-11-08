@@ -20,4 +20,7 @@
     <string name="sign_in_do_not_have_an_account">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="main_text_welcome_subscribe">DayTask</string>
+    <string name="ok">Ok</string>
+    <string name="app_comming_soon">Comming soon</string>
+    <string name="app_notification">Notification</string>
 </resources>
