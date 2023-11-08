@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
     setContentView(binding.getRoot());
     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
-    textMain();
-    buttonStart();
+    bindingText();
+    bindingButtonStart();
 
   }
-  private void textMain(){
-    String fullText = resources.getString(R.string.text_main) + " ";
-    String primaryText = resources.getString(R.string.text_main_subribe);
+  private void bindingText(){
+    String fullText = resources.getString(R.string.main_text_welcome) + " ";
+    String primaryText = resources.getString(R.string.main_text_welcome_subscribe);
     int primaryColor = ContextCompat.getColor(context, R.color.primary);
     SpannableString spannableString = new SpannableString(fullText + primaryText);
     ForegroundColorSpan colorSpan = new ForegroundColorSpan(primaryColor);
@@ -49,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
     binding.includeContent.textLogo.setText(spannableString);
   }
 
-   private void buttonStart(){
+   private void bindingButtonStart(){
     // Set the color for the "colored" part
-    String startString = resources.getString(R.string.let_start);
-    binding.includeContent.includeButton.buttonStart.setText(startString);
-    binding.includeContent.includeButton.buttonStart.setOnClickListener(v -> {
+    String startString = resources.getString(R.string.main_let_start);
+    binding.includeContent.includeButton.buttonPrimary.setText(startString);
+    binding.includeContent.includeButton.buttonPrimary.setOnClickListener(v -> {
       Intent intent = new Intent(MainActivity.this, SignIn.class);
       startActivity(intent);
     });

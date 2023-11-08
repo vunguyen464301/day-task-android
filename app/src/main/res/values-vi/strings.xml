@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Todo List Android</string>
-  <string name="sign_in">Đăng nhập</string>
-  <string name="let_start">Bắt đầu</string>
-  <string name="text_main">Quản lý công việc của bạn với</string>
-  <string name="text_main_subribe">DayTask</string>
+  <string name="sign_in">Đăng Nhập</string>
+  <string name="main_let_start">Bắt đầu</string>
+  <string name="main_text_welcome">Quản lý công việc của bạn với</string>
+  <string name="sign_in_welcome_back">Chào mừng quay trở lại!</string>
+  <string name="sign_in_email_address">Địa chỉ Email</string>
+  <string name="sign_in_password">Mật khẩu</string>
+  <string name="sign_in_forgot_password">Quên mật khẩu?</string>
+  <string name="sign_in_log_in">Đăng nhập</string>
+  <string name="sign_in_or_continue_with">Hoặc tiếp tục với</string>
+  <string name="sign_in_google">Google</string>
+  <string name="sign_in_do_not_have_an_account">Không có tài khoản?</string>
+  <string name="sign_up">Đăng Kí</string>
+  <string name="main_text_welcome_subscribe">DayTask</string>
 </resources>

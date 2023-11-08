@@ -1,11 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="match_parent"
+  android:orientation="vertical">
 
-  <AutoCompleteTextView
-    android:layout_width="299px"
-    android:layout_height="299px"
-    android:hint="username" />
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="30dp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sign_in_welcome_back"
+    android:textSize="26sp" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <TextView
+    android:id="@+id/textEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sign_in_email_address"
+    android:textColor="@color/color_text_1"
+    android:textSize="18sp" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <include
+    android:id="@+id/inputEmail"
+    layout="@layout/input" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <TextView
+    android:id="@+id/textPassword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sign_in_password"
+    android:textColor="@color/color_text_1"
+    android:textSize="18sp" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <include
+    android:id="@+id/inputPassword"
+    layout="@layout/input" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="10dp" />
+
+    <TextView
+      android:id="@+id/textForgotPassword"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/sign_in_forgot_password"
+      android:textColor="@color/color_text_1"
+      android:textSize="18sp" />
+
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="20dp" />
+  </LinearLayout>
+
+  <include
+    android:id="@+id/buttonSignIn"
+    layout="@layout/button_primary" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+      android:layout_width="10dp"
+      android:layout_height="1dp"
+      android:layout_gravity="center_vertical"
+      android:layout_weight="1"
+      android:background="@color/color_text_1" />
+
+    <TextView
+      android:id="@+id/textOrContinueWith"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="30px"
+      android:text="@string/sign_in_or_continue_with" />
+
+    <View
+      android:layout_width="10dp"
+      android:layout_height="1dp"
+      android:layout_gravity="center_vertical"
+      android:layout_weight="1"
+      android:background="@color/color_text_1" />
+
+  </LinearLayout>
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+
+  <include
+    android:id="@+id/buttonGoogle"
+    layout="@layout/button_light" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="30dp" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/sign_in_do_not_have_an_account" />
+
+    <Button
+      android:id="@+id/buttonSignUp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@android:color/transparent"
+      android:text="@string/sign_up"
+      android:textColor="@color/primary"
+      android:textSize="16dp" />
+  </LinearLayout>
 
 </LinearLayout>

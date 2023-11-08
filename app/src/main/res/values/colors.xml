@@ -10,4 +10,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark">#222831</color>
     <color name="light">#FBF6DB</color>
+    <color name="color_text_1">#8CAAB9</color>
+    <color name="color_input_1">#455A64</color>
+
 </resources>
