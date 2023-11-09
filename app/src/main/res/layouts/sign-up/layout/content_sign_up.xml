@@ -20,6 +20,26 @@
     android:layout_height="10dp" />
 
   <TextView
+    android:id="@+id/textFullName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sign_up_full_name"
+    android:textColor="@color/color_text_1"
+    android:textSize="18sp" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <include
+    android:id="@+id/inputFullName"
+    layout="@layout/input" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <TextView
     android:id="@+id/textEmail"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -43,8 +63,10 @@
     android:id="@+id/textPassword"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+
     android:text="@string/sign_in_password"
     android:textColor="@color/color_text_1"
+
     android:textSize="18sp" />
 
   <Space
@@ -55,31 +77,65 @@
     android:id="@+id/inputPassword"
     layout="@layout/input" />
 
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="15dp" />
+
   <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="right"
-    android:orientation="vertical">
+    android:layout_height="wrap_content">
 
-    <Space
-      android:layout_width="match_parent"
-      android:layout_height="10dp" />
-
-    <TextView
-      android:id="@+id/textForgotPassword"
+    <ImageView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="@string/sign_in_forgot_password"
-      android:textColor="@color/color_text_1"
-      android:textSize="18sp" />
+      android:src="@drawable/check_box_on_primary" />
 
     <Space
-      android:layout_width="match_parent"
-      android:layout_height="20dp" />
+      android:layout_width="10px"
+      android:layout_height="match_parent" />
+
+    <TextView
+      android:id="@+id/textAccept"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/sign_up_i_have_read_and_agree_daytask"
+      android:textColor="@color/color_text_1"
+      android:textSize="14sp" />
+
+    <TextView
+      android:id="@+id/textPrivacyAndPolicy"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingHorizontal="10px"
+      android:text="@string/sign_up_privacy_policy"
+      android:textColor="@color/primary"
+      android:textSize="16sp"
+      android:textStyle="normal" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=", "
+      android:textColor="@color/color_text_1"
+      android:textSize="14sp" />
   </LinearLayout>
 
+  <TextView
+    android:id="@+id/textTermAndCondition"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10px"
+    android:text="@string/sign_up_term_and_condition"
+    android:textColor="@color/primary"
+    android:textSize="16sp"
+    android:textStyle="normal" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="20dp" />
+
   <include
-    android:id="@+id/buttonSignIn"
+    android:id="@+id/buttonSignUp"
     layout="@layout/button_primary" />
 
   <Space
@@ -135,17 +191,21 @@
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="@string/sign_in_do_not_have_an_account" />
+      android:text="@string/sign_up_already_have_an_account" />
 
     <TextView
-      android:id="@+id/buttonSignUp"
+      android:id="@+id/buttonSignIn"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:paddingHorizontal="10px"
       android:background="@android:color/transparent"
-      android:text="@string/sign_up"
+      android:paddingHorizontal="10px"
+      android:text="@string/sign_in"
       android:textColor="@color/primary"
       android:textSize="16dp" />
   </LinearLayout>
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="30dp" />
 
 </LinearLayout>

@@ -8,7 +8,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android_app.day_task_android.databinding.ActivitySignInBinding;
@@ -28,7 +27,7 @@ public class SignIn extends AppCompatActivity {
     super.onCreate(savedInstanceState);
 
     binding = ActivitySignInBinding.inflate(getLayoutInflater());
-    contentBinding = ContentSignInBinding.bind(binding.getRoot());
+    contentBinding = binding.content;
     setContentView(binding.getRoot());
 
     context = SignIn.this;
@@ -60,7 +59,7 @@ public class SignIn extends AppCompatActivity {
     contentBinding.buttonSignIn.buttonPrimary.setText(text);
     contentBinding.buttonSignIn.buttonPrimary.setOnClickListener(v -> {
       String title=resources.getString(R.string.app_notification);
-      String message=resources.getString(R.string.app_comming_soon);
+      String message=resources.getString(R.string.app_coming_soon);
       MyAlertDialog.showAlertDialog(context,title,message);
     });
   }
@@ -73,7 +72,7 @@ public class SignIn extends AppCompatActivity {
     contentBinding.buttonGoogle.button.setOnClickListener(v->{
 
       String title=resources.getString(R.string.app_notification);
-      String message=resources.getString(R.string.app_comming_soon);
+      String message=resources.getString(R.string.app_coming_soon);
       MyAlertDialog.showAlertDialog(context,title,message);
     });
   }

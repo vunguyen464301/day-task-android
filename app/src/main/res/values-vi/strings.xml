@@ -14,7 +14,13 @@
   <string name="sign_in_do_not_have_an_account">Không có tài khoản?</string>
   <string name="sign_up">Đăng Kí</string>
   <string name="main_text_welcome_subscribe">DayTask</string>
-  <string name="ok">Đồng ý</string>
-  <string name="app_comming_soon">Sắp ra mắt</string>
+  <string name="app_ok">Đồng ý</string>
+  <string name="app_coming_soon">Sắp ra mắt</string>
   <string name="app_notification">Thông báo</string>
+  <string name="sign_up_create_your_account">Tạo tài khoản</string>
+  <string name="sign_up_full_name">Họ và Tên</string>
+  <string name="sign_up_i_have_read_and_agree_daytask">Tôi đã đọc và đồng ý DayTask</string>
+  <string name="sign_up_privacy_policy">Chính sách riêng tư</string>
+  <string name="sign_up_already_have_an_account">Đã có tài khoản?</string>
+  <string name="sign_up_term_and_condition">Điều Kiện &amp; Điều Khoản</string>
 </resources>

@@ -12,7 +12,7 @@ public class MyAlertDialog {
     builder.setTitle(title);
     builder.setMessage(message);
 
-    String okText=context.getString(R.string.ok);
+    String okText=context.getString(R.string.app_ok);
 
     // Add a button to dismiss the dialog
     builder.setPositiveButton(okText, new DialogInterface.OnClickListener() {
