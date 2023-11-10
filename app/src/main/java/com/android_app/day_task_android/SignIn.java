@@ -23,7 +23,7 @@ public class SignIn extends AppCompatActivity {
 
 
   @Override
-  protected void onCreate( Bundle savedInstanceState) {
+  protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     binding = ActivitySignInBinding.inflate(getLayoutInflater());
@@ -58,28 +58,29 @@ public class SignIn extends AppCompatActivity {
     String text = resources.getString(R.string.sign_in);
     contentBinding.buttonSignIn.buttonPrimary.setText(text);
     contentBinding.buttonSignIn.buttonPrimary.setOnClickListener(v -> {
-      String title=resources.getString(R.string.app_notification);
-      String message=resources.getString(R.string.app_coming_soon);
-      MyAlertDialog.showAlertDialog(context,title,message);
+      Intent intent = new Intent(SignIn.this, BottomTabs.class);
+      intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+      startActivity(intent);
     });
   }
+
   @SuppressLint("UseCompatLoadingForDrawables")
   private void bindingButtonGoogle() {
     String text = resources.getString(R.string.sign_in_google);
     Drawable drawable = resources.getDrawable(R.drawable.google_icon, context.getTheme());
     contentBinding.buttonGoogle.iconView.setImageDrawable(drawable);
     contentBinding.buttonGoogle.textView.setText(text);
-    contentBinding.buttonGoogle.button.setOnClickListener(v->{
+    contentBinding.buttonGoogle.button.setOnClickListener(v -> {
 
-      String title=resources.getString(R.string.app_notification);
-      String message=resources.getString(R.string.app_coming_soon);
-      MyAlertDialog.showAlertDialog(context,title,message);
+      String title = resources.getString(R.string.app_notification);
+      String message = resources.getString(R.string.app_coming_soon);
+      MyAlertDialog.showAlertDialog(context, title, message);
     });
   }
 
   private void bindingButtonSignUp() {
     contentBinding.buttonSignUp.setOnClickListener(v -> {
-      Intent intent=new Intent(SignIn.this,SignUp.class);
+      Intent intent = new Intent(SignIn.this, SignUp.class);
       startActivity(intent);
     });
   }

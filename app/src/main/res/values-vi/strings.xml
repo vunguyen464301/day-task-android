@@ -23,4 +23,9 @@
   <string name="sign_up_privacy_policy">Chính sách riêng tư</string>
   <string name="sign_up_already_have_an_account">Đã có tài khoản?</string>
   <string name="sign_up_term_and_condition">Điều Kiện &amp; Điều Khoản</string>
+  <string name="bottom_tab_home">Trang chủ</string>
+  <string name="bottom_tab_messages">Tin nhắn</string>
+  <string name="bottom_tab_calendar">Lịch</string>
+  <string name="bottom_tab_notifications">Thông báo</string>
+  <string name="bottom_tab_settings">Cài đặt</string>
 </resources>

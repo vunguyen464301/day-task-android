@@ -34,7 +34,7 @@ public class SignUp extends AppCompatActivity {
   private Resources resources;
 
   @Override
-  protected void onCreate(@Nullable Bundle savedInstanceState) {
+  protected void onCreate( Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     binding = ActivitySignUpBinding.inflate(getLayoutInflater());
     contentBinding = binding.content;
