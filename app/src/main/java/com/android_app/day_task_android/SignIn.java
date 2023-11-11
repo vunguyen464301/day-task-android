@@ -10,6 +10,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android_app.day_task_android.bottom_tabs.BottomTabs;
 import com.android_app.day_task_android.databinding.ActivitySignInBinding;
 import com.android_app.day_task_android.databinding.ContentSignInBinding;
 

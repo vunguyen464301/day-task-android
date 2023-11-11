@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/mobile_navigation"
+  app:startDestination="@+id/navigation_home">
+
+  <fragment
+    android:id="@+id/navigation_home"
+    android:name="com.android_app.day_task_android.bottom_tabs.home.HomeFragment"
+    android:label="@string/bottom_tab_home"
+    tools:layout="@layout/fragment_home" />
+
+  <fragment
+    android:id="@+id/navigation_messages"
+    android:name="com.android_app.day_task_android.bottom_tabs.messages.MessagesFragment"
+    android:label="@string/bottom_tab_messages"
+    tools:layout="@layout/fragment_messages" />
+
+  <fragment
+    android:id="@+id/navigation_calendar"
+    android:name="com.android_app.day_task_android.bottom_tabs.calendar.CalendarFragment"
+    android:label="@string/bottom_tab_calendar"
+    tools:layout="@layout/fragment_calendar" />
+
+  <fragment
+    android:id="@+id/navigation_notifications"
+    android:name="com.android_app.day_task_android.bottom_tabs.notifications.NotificationsFragment"
+    android:label="@string/bottom_tab_notifications"
+    tools:layout="@layout/fragment_notifications" />
+
+  <fragment
+    android:id="@+id/navigation_settings"
+    android:name="com.android_app.day_task_android.bottom_tabs.settings.SettingsFragment"
+    android:label="@string/bottom_tab_settings"
+    tools:layout="@layout/fragment_settings" />
+
+</navigation>

@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
     bindingButtonStart();
 
   }
-  private void bindingText(){
+
+  private void bindingText() {
     String fullText = resources.getString(R.string.main_text_welcome) + " ";
     String primaryText = resources.getString(R.string.main_text_welcome_subscribe);
     int primaryColor = ContextCompat.getColor(context, R.color.primary);
@@ -59,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
     binding.content.textLogo.setText(spannableString);
   }
 
-  private void bindingButtonStart(){
-  // Set the color for the "colored" part
+  private void bindingButtonStart() {
+    // Set the color for the "colored" part
     String startString = resources.getString(R.string.main_let_start);
     binding.content.includeButton.buttonPrimary.setText(startString);
     binding.content.includeButton.buttonPrimary.setOnClickListener(v -> {

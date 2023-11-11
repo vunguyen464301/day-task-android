@@ -32,7 +32,7 @@
       android:label="@string/sign_up" />
 
     <activity
-      android:name=".BottomTabs" />
+      android:name=".bottom_tabs.BottomTabs" />
 
   </application>
 
