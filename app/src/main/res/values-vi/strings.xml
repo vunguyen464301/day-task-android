@@ -28,4 +28,10 @@
   <string name="bottom_tab_calendar">Lịch</string>
   <string name="bottom_tab_notifications">Thông báo</string>
   <string name="bottom_tab_settings">Cài đặt</string>
+  <string name="home_welcome_back">Chào mừng quay trở lại!</string>
+  <string name="home_completed_tasks">Nhiệm vụ hoàn thành</string>
+  <string name="home_team_members">Thành viên</string>
+  <string name="home_completed">Hoàn thành</string>
+  <string name="home_ongoing_project">Các dự án đang làm</string>
+  <string name="home_due_on">Đến hạn vào</string>
 </resources>

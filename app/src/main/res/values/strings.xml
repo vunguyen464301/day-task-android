@@ -35,5 +35,10 @@
   <string name="bottom_tab_notifications">Notifications</string>
   <string name="bottom_tab_settings">Settings</string>
   <!-- TODO: Remove or change this placeholder text -->
-  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="home_welcome_back">Welcome Back!</string>
+  <string name="home_completed_tasks">Completed Tasks</string>
+  <string name="home_team_members">Team members</string>
+  <string name="home_completed">Completed</string>
+  <string name="home_ongoing_project">Ongoing Project</string>
+  <string name="home_due_on">Due on</string>
 </resources>
