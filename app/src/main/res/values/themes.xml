@@ -18,7 +18,7 @@
     <!-- Customize your light theme here. -->
     <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     <!-- Customize your theme here. -->
-    <item name="android:backgroundTint">@color/light</item>
+    <item name="android:colorBackground">@color/light</item>
     <item name="android:textColorHighlight">@color/purple_500</item>
     <item name="android:textColor">@color/black</item>
   </style>
