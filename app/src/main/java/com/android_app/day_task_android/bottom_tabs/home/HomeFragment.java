@@ -1,6 +1,7 @@
 package com.android_app.day_task_android.bottom_tabs.home;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +16,8 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.android_app.day_task_android.MainActivity;
 import com.android_app.day_task_android.R;
+import com.android_app.day_task_android.SignIn;
+import com.android_app.day_task_android.create_project.CreateProject;
 import com.android_app.day_task_android.databinding.CardOnGoingProjectBinding;
 import com.android_app.day_task_android.databinding.ContentHomeBinding;
 import com.android_app.day_task_android.databinding.FragmentHomeBinding;
@@ -45,6 +48,7 @@ public class HomeFragment extends Fragment {
     bindingInput();
     bindingSearchButton();
     bindingProgress();
+    bindingButtonAdd();
 
 //    final C textView = binding.contentOnGoingProject;
 //    homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
@@ -78,5 +82,14 @@ public class HomeFragment extends Fragment {
     ProgressBar progressBar = cardOnGoingProjectBinding.progress;
     progressBar.setProgress(90);
     progressBar.setMax(100);
+  }
+
+  private void bindingButtonAdd() {
+    String text = resources.getString(R.string.home_add_project);
+    contentHomeBinding.buttonAddProject.textView.setText(text);
+    contentHomeBinding.buttonAddProject.button.setOnClickListener(v -> {
+      Intent intent = new Intent(getActivity(), CreateProject.class);
+      startActivity(intent);
+    });
   }
 }

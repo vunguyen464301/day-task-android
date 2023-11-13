@@ -18,6 +18,7 @@
     <item name="android:paddingTop">50px</item>
     <item name="android:paddingLeft">50px</item>
     <item name="android:paddingRight">50px</item>
+    <item name="android:paddingBottom">40px</item>
   </style>
 
   <style name="progress_bar_straight_line" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">

@@ -44,4 +44,12 @@
   <string name="home_see_all">See all</string>
   <string name="app_three_dot">...</string>
   <string name="home_search_tasks">Search tasks</string>
+  <string name="home_add_project">Add Project</string>
+  <string name="create_project_create_new_task">Create New Task</string>
+  <string name="create_project_task_title">Task Title</string>
+  <string name="create_project_task_details">Task Details</string>
+  <string name="create_project_add_team_members">Add team members</string>
+  <string name="create_project_time_and_date">Time &amp; Date</string>
+  <string name="create_project_add_new">Add New</string>
+  <string name="create_project_create">Create</string>
 </resources>

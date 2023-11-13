@@ -43,11 +43,10 @@ android {
         "src/main/res/layouts/sign-in",
         "src/main/res/layouts/sign-up",
         "src/main/res/layouts/bottom-tabs",
-        "src/main/res/layouts/home",
-        "src/main/res/layouts/messages",
-        "src/main/res/layouts/calendar",
-        "src/main/res/layouts/notifications",
-        "src/main/res/layouts/settings",
+        "src/main/res/layouts/create-project",
+        "src/main/res/layouts/detail-project",
+        "src/main/res/layouts/create-task",
+        "src/main/res/layouts/detail-task",
       )
     }
   }
