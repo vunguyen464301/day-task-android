@@ -31,17 +31,14 @@
       android:textStyle="bold" />
   </LinearLayout>
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="80px">
 
-    <include
-      android:id="@+id/includeButton"
-      layout="@layout/button_primary"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent" />
-  </LinearLayout>
+  <include
+    android:id="@+id/includeButton"
+    layout="@layout/button_large_primary" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="80px" />
 
 </LinearLayout>
 

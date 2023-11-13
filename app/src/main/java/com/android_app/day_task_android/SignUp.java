@@ -169,8 +169,8 @@ public class SignUp extends AppCompatActivity {
 
   private void bindingButtonSignUp() {
     String text = resources.getString(R.string.sign_up);
-    contentBinding.buttonSignUp.buttonPrimary.setText(text);
-    contentBinding.buttonSignUp.buttonPrimary.setOnClickListener(v -> {
+    contentBinding.buttonSignUp.textView.setText(text);
+    contentBinding.buttonSignUp.button.setOnClickListener(v -> {
       String title = resources.getString(R.string.app_notification);
       String message = resources.getString(R.string.app_coming_soon);
       MyAlertDialog.showAlertDialog(context, title, message);

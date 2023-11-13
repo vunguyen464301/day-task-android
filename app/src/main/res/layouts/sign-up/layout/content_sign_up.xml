@@ -108,7 +108,7 @@
 
   <include
     android:id="@+id/buttonSignUp"
-    layout="@layout/button_primary" />
+    layout="@layout/button_large_primary" />
 
   <Space
     android:layout_width="match_parent"

@@ -19,4 +19,18 @@
     <item name="android:paddingLeft">50px</item>
     <item name="android:paddingRight">50px</item>
   </style>
+
+  <style name="progress_bar_straight_line" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+<!--    <item name="android:indeterminate">true</item>-->
+    <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+  </style>
+
+  <style name="progress_bar_circle" >
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:progressDrawable">@drawable/progress_primary_status</item>
+    <item name="android:indeterminateOnly">false</item>
+  </style>
 </resources>

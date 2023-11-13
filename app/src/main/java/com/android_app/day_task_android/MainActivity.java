@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
   private void bindingButtonStart() {
     // Set the color for the "colored" part
     String startString = resources.getString(R.string.main_let_start);
-    binding.content.includeButton.buttonPrimary.setText(startString);
-    binding.content.includeButton.buttonPrimary.setOnClickListener(v -> {
+    binding.content.includeButton.textView.setText(startString);
+    binding.content.includeButton.button.setOnClickListener(v -> {
       Intent intent = new Intent(MainActivity.this, SignIn.class);
       startActivity(intent);
     });

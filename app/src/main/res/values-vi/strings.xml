@@ -34,4 +34,7 @@
   <string name="home_completed">Hoàn thành</string>
   <string name="home_ongoing_project">Các dự án đang làm</string>
   <string name="home_due_on">Đến hạn vào</string>
+  <string name="home_see_all">Xem tất cả</string>
+  <string name="app_three_dot">...</string>
+  <string name="home_search_tasks">Tìm kiếm task</string>
 </resources>

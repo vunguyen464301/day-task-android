@@ -57,8 +57,8 @@ public class SignIn extends AppCompatActivity {
 
   private void bindingButtonLogin() {
     String text = resources.getString(R.string.sign_in);
-    contentBinding.buttonSignIn.buttonPrimary.setText(text);
-    contentBinding.buttonSignIn.buttonPrimary.setOnClickListener(v -> {
+    contentBinding.buttonSignIn.textView.setText(text);
+    contentBinding.buttonSignIn.button.setOnClickListener(v -> {
       Intent intent = new Intent(SignIn.this, BottomTabs.class);
       intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
       startActivity(intent);

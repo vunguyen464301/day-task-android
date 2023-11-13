@@ -41,4 +41,7 @@
   <string name="home_completed">Completed</string>
   <string name="home_ongoing_project">Ongoing Project</string>
   <string name="home_due_on">Due on</string>
+  <string name="home_see_all">See all</string>
+  <string name="app_three_dot">...</string>
+  <string name="home_search_tasks">Search tasks</string>
 </resources>
