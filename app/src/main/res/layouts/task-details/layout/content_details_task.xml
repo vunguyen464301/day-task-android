@@ -13,7 +13,7 @@
     android:id="@+id/text_title"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="22dp"
+    android:textSize="16dp"
     android:textStyle="bold" />
 
   <Space
@@ -52,14 +52,14 @@
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/project_details_due_date"
+          android:text="@string/task_details_due_date"
           android:textColor="@color/color_text_1"
           android:textSize="11dp" />
 
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/project_details_due_date"
+          android:text="@string/task_details_due_date"
           android:textSize="17dp" />
       </LinearLayout>
     </LinearLayout>
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content">
 
         <include
-          android:id="@+id/button_project_teams"
+          android:id="@+id/button_assigned_members"
           layout="@layout/button_small_primary" />
       </LinearLayout>
 
@@ -91,7 +91,7 @@
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/project_details_project_team"
+          android:text="@string/task_details_assigned_members"
           android:textColor="@color/color_text_1"
           android:textSize="11dp" />
 
@@ -116,7 +116,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/project_details_details"
+    android:text="@string/task_details_details"
     android:textSize="18dp"
     android:textStyle="bold" />
 
@@ -130,55 +130,5 @@
     android:layout_height="wrap_content"
     android:textColor="@color/color_text_2"
     android:textSize="12dp" />
-
-
-  <Space
-    android:layout_width="match_parent"
-    android:layout_height="20dp" />
-
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-    <LinearLayout
-      android:layout_width="0dp"
-      android:layout_height="match_parent"
-      android:layout_weight="1"
-      android:gravity="center_vertical">
-
-      <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/project_details_progress"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-    </LinearLayout>
-
-    <include
-      android:id="@+id/progress_bar"
-      layout="@layout/progress_bar_custom" />
-
-  </LinearLayout>
-
-  <Space
-    android:layout_width="match_parent"
-    android:layout_height="20dp" />
-
-  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/project_details_all_tasks"
-    android:textSize="18dp"
-    android:textStyle="bold" />
-
-  <Space
-    android:layout_width="match_parent"
-    android:layout_height="12dp" />
-
-  <include
-    android:id="@+id/item_task"
-    layout="@layout/card_task" />
-
 
 </LinearLayout>

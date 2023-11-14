@@ -36,6 +36,7 @@
     <activity android:name=".CreateProject" />
     <activity android:name=".ProjectDetails" />
     <activity android:name=".CreateTask" />
+    <activity android:name=".TaskDetails" />
 
   </application>
 

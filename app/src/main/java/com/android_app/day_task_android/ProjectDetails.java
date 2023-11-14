@@ -102,7 +102,10 @@ public class ProjectDetails extends AppCompatActivity {
     contentDetailsProjectBinding.itemTask.text.setText("User interviews");
     contentDetailsProjectBinding.itemTask.statusTask.iconView.setImageDrawable(icon);
     contentDetailsProjectBinding.itemTask.statusTask.textView.setVisibility(View.GONE);
+    contentDetailsProjectBinding.itemTask.button.setOnClickListener(v -> {
+      Intent intent = new Intent(this, TaskDetails.class);
+      startActivity(intent);
+    });
   }
-
 
 }
