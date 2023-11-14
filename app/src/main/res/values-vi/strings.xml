@@ -64,4 +64,11 @@
   <string name="task_details_assigned_members">Chỉ định thành viên</string>
   <string name="task_details_save">Lưu</string>
   <string name="create_task">Tạo task</string>
+  <string name="bottom_tab_contacts">Danh bạ</string>
+  <string name="contacts">Danh bạ</string>
+  <string name="contact_details">Chi Tiết Danh Bạ</string>
+  <string name="contact_details_add">Thêm</string>
+  <string name="contact_details_delete">Xóa</string>
+  <string name="contact_details_block">Chặn</string>
+  <string name="contact_details_un_block">Bỏ chặn</string>
 </resources>

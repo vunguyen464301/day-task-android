@@ -31,9 +31,9 @@
     tools:layout="@layout/fragment_notifications" />
 
   <fragment
-    android:id="@+id/navigation_settings"
-    android:name="com.android_app.day_task_android.bottom_tabs.settings.SettingsFragment"
-    android:label="@string/bottom_tab_settings"
-    tools:layout="@layout/fragment_settings" />
+    android:id="@+id/navigation_contacts"
+    android:name="com.android_app.day_task_android.bottom_tabs.contacts.ContactsFragment"
+    android:label="@string/bottom_tab_contacts"
+    tools:layout="@layout/fragment_contacts" />
 
 </navigation>

@@ -8,9 +8,9 @@
     android:title="@string/bottom_tab_home" />
 
   <item
-    android:id="@+id/navigation_messages"
-    android:icon="@drawable/messages_tab_icon"
-    android:title="@string/bottom_tab_messages" />
+    android:id="@+id/navigation_contacts"
+    android:icon="@drawable/contact_tab_icon"
+    android:title="@string/bottom_tab_contacts" />
 
   <item
     android:id="@+id/navigation_calendar"
@@ -18,13 +18,14 @@
     android:title="@string/bottom_tab_calendar" />
 
   <item
+    android:id="@+id/navigation_messages"
+    android:icon="@drawable/messages_tab_icon"
+    android:title="@string/bottom_tab_messages" />
+
+  <item
     android:id="@+id/navigation_notifications"
     android:icon="@drawable/notification_tab_icon"
     android:title="@string/app_notification" />
 
-  <item
-    android:id="@+id/navigation_settings"
-    android:icon="@drawable/settings_tab_icon"
-    android:title="@string/bottom_tab_settings" />
 
 </menu>

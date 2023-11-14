@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/padding_content"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <ImageView
+      android:id="@+id/icon"
+      android:layout_width="500px"
+      android:layout_height="500px"
+      android:src="@mipmap/avatar_test" />
+  </LinearLayout>
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+
+
+  <include
+    android:id="@+id/button_add"
+    layout="@layout/button_custom_1" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <include
+    android:id="@+id/button_delete"
+    layout="@layout/button_custom_1" />
+
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <include
+    android:id="@+id/button_block"
+    layout="@layout/button_custom_1" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+  <include
+    android:id="@+id/button_unblock"
+    layout="@layout/button_custom_1" />
+
+
+</LinearLayout>

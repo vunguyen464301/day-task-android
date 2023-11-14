@@ -47,6 +47,7 @@ android {
         "src/main/res/layouts/project-details",
         "src/main/res/layouts/create-task",
         "src/main/res/layouts/task-details",
+        "src/main/res/layouts/contact-details",
       )
     }
   }

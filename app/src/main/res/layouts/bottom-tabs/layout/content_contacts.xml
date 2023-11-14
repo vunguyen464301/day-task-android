@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/padding_content"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+
+  <LinearLayout
+    android:id="@+id/button_item"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:layout_width="100px"
+      android:layout_height="100px"
+      android:src="@mipmap/avatar_test" />
+
+    <Space
+      android:layout_width="10dp"
+      android:layout_height="match_parent" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center_vertical">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amelia"
+        android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical">
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_contact_icon" />
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>
