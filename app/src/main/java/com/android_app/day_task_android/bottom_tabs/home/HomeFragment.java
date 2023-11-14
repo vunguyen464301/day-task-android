@@ -75,8 +75,8 @@ public class HomeFragment extends Fragment {
 
   private void bindingProgress() {
     CardOnGoingProjectBinding cardOnGoingProjectBinding = contentHomeBinding.contentOnGoingProject;
-    cardOnGoingProjectBinding.textProgress.setText("90%");
-    ProgressBar progressBar = cardOnGoingProjectBinding.progress;
+    cardOnGoingProjectBinding.progress.textProgress.setText("90%");
+    ProgressBar progressBar = cardOnGoingProjectBinding.progress.statusProgress;
     progressBar.setProgress(90);
     progressBar.setMax(100);
     cardOnGoingProjectBinding.card.setOnClickListener(v->{

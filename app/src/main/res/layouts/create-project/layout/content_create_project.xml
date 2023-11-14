@@ -14,7 +14,7 @@
 
   <Space
     android:layout_width="match_parent"
-    android:layout_height="10dp" />
+    android:layout_height="12dp" />
 
   <include
     android:id="@+id/input_title"
@@ -33,7 +33,7 @@
 
   <Space
     android:layout_width="match_parent"
-    android:layout_height="10dp" />
+    android:layout_height="12dp" />
 
   <include
     android:id="@+id/input_details"
@@ -51,7 +51,7 @@
     android:textStyle="bold" />
   <Space
     android:layout_width="match_parent"
-    android:layout_height="10dp" />
+    android:layout_height="12dp" />
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
 
   <Space
     android:layout_width="match_parent"
-    android:layout_height="10dp" />
+    android:layout_height="12dp" />
 
   <LinearLayout
     android:layout_width="match_parent"

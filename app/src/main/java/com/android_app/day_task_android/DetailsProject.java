@@ -1,5 +1,6 @@
 package com.android_app.day_task_android;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -45,6 +46,9 @@ public class DetailsProject extends AppCompatActivity {
     headerNavigationBinding.iconLeft.setImageDrawable(iconLeft);
     headerNavigationBinding.text.setText(text);
     headerNavigationBinding.iconRight.setImageDrawable(iconRight);
+    headerNavigationBinding.iconLeft.setOnClickListener(v -> {
+      finish();
+    });
   }
 
   private void bindingContent() {
