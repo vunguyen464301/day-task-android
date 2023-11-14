@@ -51,7 +51,7 @@
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      android:text="@string/home_completed_tasks"
+      android:text="@string/home_completed_projects"
       android:textSize="20dp"
       android:textStyle="bold" />
 

@@ -63,6 +63,10 @@ public class DetailsProject extends AppCompatActivity {
   private void bindingFooter() {
     String text = resources.getString(R.string.details_project_add_task);
     footerDetailsProjectBinding.buttonAddTask.textView.setText(text);
+    footerDetailsProjectBinding.buttonAddTask.button.setOnClickListener(v -> {
+      Intent intent = new Intent(this, CreateTask.class);
+      startActivity(intent);
+    });
   }
 
   private void bindingTextTitle() {

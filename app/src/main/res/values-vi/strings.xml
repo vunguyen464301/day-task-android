@@ -29,7 +29,7 @@
   <string name="bottom_tab_notifications">Thông báo</string>
   <string name="bottom_tab_settings">Cài đặt</string>
   <string name="home_welcome_back">Chào mừng quay trở lại!</string>
-  <string name="home_completed_tasks">Hoàn Thành Task</string>
+  <string name="home_completed_projects">Hoàn Thành Dự Án</string>
   <string name="home_team_members">Thành viên</string>
   <string name="home_completed">Hoàn thành</string>
   <string name="home_ongoing_project">Các dự án đang làm</string>
@@ -38,9 +38,9 @@
   <string name="app_three_dot">...</string>
   <string name="home_search_tasks">Tìm kiếm task</string>
   <string name="home_add_project">Thêm dự án</string>
-  <string name="create_project_create_new_task">Tạo mới task</string>
-  <string name="create_project_task_title">Tiêu đề</string>
-  <string name="create_project_task_details">Chi tiết</string>
+  <string name="create_project_create_new_project">Tạo mới dự án</string>
+  <string name="create_project_project_title">Tiêu đề</string>
+  <string name="create_project_project_details">Chi tiết</string>
   <string name="create_project_add_team_members">Thêm thành viên</string>
   <string name="create_project_time_and_date">Thời gian &amp; ngày</string>
   <string name="create_project_add_new">Thêm task</string>
@@ -52,4 +52,16 @@
   <string name="details_project_progress">Tiến Trình</string>
   <string name="details_project_all_tasks">Tất Cả Task</string>
   <string name="details_project_add_task">Thêm Task</string>
+  <string name="create_task_create_new_project">Tạo Mới Task</string>
+  <string name="create_task_task_title">Tiêu đề</string>
+  <string name="create_task_task_details">Chi tiết</string>
+  <string name="create_task_add_assign_members">Chỉ định thành viên</string>
+  <string name="create_task_time_and_date">Thời Gian &amp; Ngày</string>
+  <string name="create_task_save">Lưu</string>
+  <string name="task_details">Chi Tiết Task</string>
+  <string name="task_details_details">Chi Tiết</string>
+  <string name="task_details_due_date">Đến Hạn</string>
+  <string name="task_details_assigned_members">Chỉ định thành viên</string>
+  <string name="task_details_save">Lưu</string>
+  <string name="create_task">Tạo task</string>
 </resources>

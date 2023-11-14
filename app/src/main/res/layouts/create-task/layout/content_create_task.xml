@@ -8,7 +8,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/create_project_project_title"
+    android:text="@string/create_task_task_title"
     android:textSize="18dp"
     android:textStyle="bold" />
 
@@ -27,7 +27,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/create_project_project_details"
+    android:text="@string/create_task_task_details"
     android:textSize="18dp"
     android:textStyle="bold" />
 
@@ -46,7 +46,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/create_project_add_team_members"
+    android:text="@string/create_task_add_assign_members"
     android:textSize="18dp"
     android:textStyle="bold" />
   <Space
@@ -126,7 +126,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/create_project_time_and_date"
+    android:text="@string/create_task_time_and_date"
     android:textSize="18dp"
     android:textStyle="bold" />
 
@@ -197,19 +197,7 @@
     android:layout_width="match_parent"
     android:layout_height="40dp" />
 
-  <TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:text="@string/create_project_add_new"
-    android:textSize="18dp"
-    android:textStyle="bold" />
-
-  <Space
-    android:layout_width="match_parent"
-    android:layout_height="40dp" />
-
   <include
-    android:id="@+id/button_create_project"
+    android:id="@+id/button_save"
     layout="@layout/button_large_primary" />
 </LinearLayout>

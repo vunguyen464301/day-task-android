@@ -36,7 +36,7 @@
   <string name="bottom_tab_settings">Settings</string>
   <!-- TODO: Remove or change this placeholder text -->
   <string name="home_welcome_back">Welcome Back!</string>
-  <string name="home_completed_tasks">Completed Tasks</string>
+  <string name="home_completed_projects">Completed Project</string>
   <string name="home_team_members">Team members</string>
   <string name="home_completed">Completed</string>
   <string name="home_ongoing_project">Ongoing Project</string>
@@ -45,9 +45,8 @@
   <string name="app_three_dot">...</string>
   <string name="home_search_tasks">Search tasks</string>
   <string name="home_add_project">Add Project</string>
-  <string name="create_project_create_new_task">Create New Task</string>
-  <string name="create_project_task_title">Task Title</string>
-  <string name="create_project_task_details">Task Details</string>
+  <string name="create_project_project_title">Project Title</string>
+  <string name="create_project_project_details">Project Details</string>
   <string name="create_project_add_team_members">Add team members</string>
   <string name="create_project_time_and_date">Time &amp; Date</string>
   <string name="create_project_add_new">Add New</string>
@@ -59,4 +58,17 @@
   <string name="details_project_progress">Process</string>
   <string name="details_project_all_tasks">All Tasks</string>
   <string name="details_project_add_task">Add Task</string>
+  <string name="create_task_create_new_project">Create New Task</string>
+  <string name="create_task_task_title">Task Title</string>
+  <string name="create_task_task_details">Task Detail</string>
+  <string name="create_task_add_assign_members">Assign Members</string>
+  <string name="create_task_time_and_date">Time &amp; Date</string>
+  <string name="create_task_save">Save</string>
+  <string name="task_details">Task Details</string>
+  <string name="task_details_details" translatable="false">Details</string>
+  <string name="task_details_due_date">Due Date</string>
+  <string name="task_details_assigned_members">Assigned members</string>
+  <string name="task_details_save">Save</string>
+  <string name="create_project_create_new_project">Create New Project</string>
+  <string name="create_task">Create Task</string>
 </resources>
