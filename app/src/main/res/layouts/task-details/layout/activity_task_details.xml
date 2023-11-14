@@ -16,11 +16,11 @@
 
     <include
       android:id="@+id/content"
-      layout="@layout/content_details_project" />
+      layout="@layout/content_task_details" />
   </LinearLayout>
 
   <include
     android:id="@+id/footer"
-    layout="@layout/footer_details_project" />
+    layout="@layout/footer_task_details" />
 
 </LinearLayout>

@@ -9,27 +9,27 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android_app.day_task_android.databinding.ActivityDetailsTaskBinding;
-import com.android_app.day_task_android.databinding.ContentDetailsTaskBinding;
-import com.android_app.day_task_android.databinding.FooterDetailsTaskBinding;
+import com.android_app.day_task_android.databinding.ActivityTaskDetailsBinding;
+import com.android_app.day_task_android.databinding.ContentTaskDetailsBinding;
+import com.android_app.day_task_android.databinding.FooterTaskDetailsBinding;
 import com.android_app.day_task_android.databinding.HeaderNavigationBinding;
 
 public class TaskDetails extends AppCompatActivity {
 
-  private ActivityDetailsTaskBinding binding;
+  private ActivityTaskDetailsBinding binding;
   private HeaderNavigationBinding headerNavigationBinding;
-  private ContentDetailsTaskBinding contentDetailsTaskBinding;
-  private FooterDetailsTaskBinding footerDetailsTaskBinding;
+  private ContentTaskDetailsBinding contentTaskDetailsBinding;
+  private FooterTaskDetailsBinding footerTaskDetailsBinding;
   private Resources resources;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    binding = ActivityDetailsTaskBinding.inflate(getLayoutInflater());
+    binding = ActivityTaskDetailsBinding.inflate(getLayoutInflater());
     headerNavigationBinding = binding.header;
-    contentDetailsTaskBinding = binding.content;
-    footerDetailsTaskBinding = binding.footer;
+    contentTaskDetailsBinding = binding.content;
+    footerTaskDetailsBinding = binding.footer;
 
     setContentView(binding.getRoot());
     resources = getResources();
@@ -61,30 +61,30 @@ public class TaskDetails extends AppCompatActivity {
 
   private void bindingFooter() {
     String text = resources.getString(R.string.task_details_save);
-    footerDetailsTaskBinding.buttonSaveTask.textView.setText(text);
-    footerDetailsTaskBinding.buttonSaveTask.button.setOnClickListener(v -> {
+    footerTaskDetailsBinding.buttonSaveTask.textView.setText(text);
+    footerTaskDetailsBinding.buttonSaveTask.button.setOnClickListener(v -> {
       finish();
     });
   }
 
   private void bindingTextTitle() {
-    contentDetailsTaskBinding.textTitle.setText("Real Estate App Design");
+    contentTaskDetailsBinding.textTitle.setText("Real Estate App Design");
   }
 
   private void bindingDueDate() {
     Drawable icon = resources.getDrawable(R.drawable.calender_close_icon, this.getTheme());
-    contentDetailsTaskBinding.buttonDueDate.iconView.setImageDrawable(icon);
-    contentDetailsTaskBinding.buttonDueDate.textView.setVisibility(View.GONE);
+    contentTaskDetailsBinding.buttonDueDate.iconView.setImageDrawable(icon);
+    contentTaskDetailsBinding.buttonDueDate.textView.setVisibility(View.GONE);
   }
 
   private void bindingButtonAssignedMembers() {
     Drawable icon = resources.getDrawable(R.drawable.members_icon, this.getTheme());
-    contentDetailsTaskBinding.buttonAssignedMembers.iconView.setImageDrawable(icon);
-    contentDetailsTaskBinding.buttonAssignedMembers.textView.setVisibility(View.GONE);
+    contentTaskDetailsBinding.buttonAssignedMembers.iconView.setImageDrawable(icon);
+    contentTaskDetailsBinding.buttonAssignedMembers.textView.setVisibility(View.GONE);
   }
 
   private void bindingTextDetails() {
-    contentDetailsTaskBinding.textDetails.setText("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled");
+    contentTaskDetailsBinding.textDetails.setText("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled");
   }
 
 }
