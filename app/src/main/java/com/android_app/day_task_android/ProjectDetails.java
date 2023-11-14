@@ -9,12 +9,13 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import com.android_app.day_task_android.databinding.ActivityDetailsProjectBinding;
 import com.android_app.day_task_android.databinding.ContentDetailsProjectBinding;
 import com.android_app.day_task_android.databinding.FooterDetailsProjectBinding;
 import com.android_app.day_task_android.databinding.HeaderNavigationBinding;
 
-public class DetailsProject extends AppCompatActivity {
+public class ProjectDetails extends AppCompatActivity {
   private ActivityDetailsProjectBinding binding;
   private HeaderNavigationBinding headerNavigationBinding;
   private ContentDetailsProjectBinding contentDetailsProjectBinding;
@@ -42,7 +43,7 @@ public class DetailsProject extends AppCompatActivity {
   private void bindingHeader() {
     Drawable iconLeft = resources.getDrawable(R.drawable.back_icon, getTheme());
     Drawable iconRight = resources.getDrawable(R.drawable.edit_icon, getTheme());
-    String text = resources.getString(R.string.details_project);
+    String text = resources.getString(R.string.project_details);
     headerNavigationBinding.iconLeft.setImageDrawable(iconLeft);
     headerNavigationBinding.text.setText(text);
     headerNavigationBinding.iconRight.setImageDrawable(iconRight);
@@ -61,7 +62,7 @@ public class DetailsProject extends AppCompatActivity {
   }
 
   private void bindingFooter() {
-    String text = resources.getString(R.string.details_project_add_task);
+    String text = resources.getString(R.string.project_details_add_task);
     footerDetailsProjectBinding.buttonAddTask.textView.setText(text);
     footerDetailsProjectBinding.buttonAddTask.button.setOnClickListener(v -> {
       Intent intent = new Intent(this, CreateTask.class);

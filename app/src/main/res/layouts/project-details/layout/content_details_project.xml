@@ -51,14 +51,14 @@
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/details_project_due_date"
+          android:text="@string/project_details_due_date"
           android:textColor="@color/color_text_1"
           android:textSize="11dp" />
 
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/details_project_due_date"
+          android:text="@string/project_details_due_date"
           android:textSize="17dp" />
       </LinearLayout>
     </LinearLayout>
@@ -90,7 +90,7 @@
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/details_project_project_team"
+          android:text="@string/project_details_project_team"
           android:textColor="@color/color_text_1"
           android:textSize="11dp" />
 
@@ -115,7 +115,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/details_project_details"
+    android:text="@string/project_details_details"
     android:textSize="18dp"
     android:textStyle="bold" />
 
@@ -149,7 +149,7 @@
       <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/details_project_progress"
+        android:text="@string/project_details_progress"
         android:textSize="18dp"
         android:textStyle="bold" />
     </LinearLayout>
@@ -164,7 +164,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/details_project_all_tasks"
+    android:text="@string/project_details_all_tasks"
     android:textSize="18dp"
     android:textStyle="bold" />
 

@@ -51,13 +51,13 @@
   <string name="create_project_time_and_date">Time &amp; Date</string>
   <string name="create_project_add_new">Add New</string>
   <string name="create_project_create">Create</string>
-  <string name="details_project">Project Details</string>
-  <string name="details_project_due_date">Due Date</string>
-  <string name="details_project_project_team">Project Team</string>
-  <string name="details_project_details">Details</string>
-  <string name="details_project_progress">Process</string>
-  <string name="details_project_all_tasks">All Tasks</string>
-  <string name="details_project_add_task">Add Task</string>
+  <string name="project_details">Project Details</string>
+  <string name="project_details_due_date">Due Date</string>
+  <string name="project_details_project_team">Project Team</string>
+  <string name="project_details_details">Details</string>
+  <string name="project_details_progress">Process</string>
+  <string name="project_details_all_tasks">All Tasks</string>
+  <string name="project_details_add_task">Add Task</string>
   <string name="create_task_create_new_project">Create New Task</string>
   <string name="create_task_task_title">Task Title</string>
   <string name="create_task_task_details">Task Detail</string>
@@ -65,7 +65,7 @@
   <string name="create_task_time_and_date">Time &amp; Date</string>
   <string name="create_task_save">Save</string>
   <string name="task_details">Task Details</string>
-  <string name="task_details_details" translatable="false">Details</string>
+  <string name="task_details_details">Details</string>
   <string name="task_details_due_date">Due Date</string>
   <string name="task_details_assigned_members">Assigned members</string>
   <string name="task_details_save">Save</string>

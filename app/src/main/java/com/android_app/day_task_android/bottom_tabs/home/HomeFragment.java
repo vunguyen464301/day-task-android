@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.android_app.day_task_android.DetailsProject;
+import com.android_app.day_task_android.ProjectDetails;
 import com.android_app.day_task_android.R;
 import com.android_app.day_task_android.CreateProject;
 import com.android_app.day_task_android.databinding.CardOnGoingProjectBinding;
@@ -80,7 +80,7 @@ public class HomeFragment extends Fragment {
     progressBar.setProgress(90);
     progressBar.setMax(100);
     cardOnGoingProjectBinding.card.setOnClickListener(v->{
-      Intent intent =new Intent(this.getActivity(), DetailsProject.class);
+      Intent intent =new Intent(this.getActivity(), ProjectDetails.class);
       startActivity(intent);
     });
   }
