@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/padding_content"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="20dp"/>
+
+  <TextView
+    android:id="@+id/text_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="22dp"
+    android:textStyle="bold" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="20dp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="horizontal">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+          android:id="@+id/button_due_date"
+          layout="@layout/button_small_primary" />
+      </LinearLayout>
+
+      <Space
+        android:layout_width="12dp"
+        android:layout_height="match_parent" />
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/details_project_due_date"
+          android:textColor="@color/color_text_1"
+          android:textSize="11dp" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/details_project_due_date"
+          android:textSize="17dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="horizontal">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+          android:id="@+id/button_project_teams"
+          layout="@layout/button_small_primary" />
+      </LinearLayout>
+
+      <Space
+        android:layout_width="10dp"
+        android:layout_height="match_parent" />
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/details_project_project_team"
+          android:textColor="@color/color_text_1"
+          android:textSize="11dp" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@mipmap/avatar_test" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="20dp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/details_project_details"
+    android:textSize="18dp"
+    android:textStyle="bold" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="12dp" />
+
+  <TextView
+    android:id="@+id/text_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/color_text_2"
+    android:textSize="12dp" />
+
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="20dp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center_vertical">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_project_progress"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+<include android:id="@+id/progress_bar" layout="@layout/progress_bar_custom"/>
+  </LinearLayout>
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="20dp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/details_project_all_tasks"
+    android:textSize="18dp"
+    android:textStyle="bold" />
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="12dp" />
+
+  <include
+    android:id="@+id/item_task"
+    layout="@layout/card_task" />
+
+
+</LinearLayout>

@@ -29,7 +29,7 @@
   <string name="bottom_tab_notifications">Thông báo</string>
   <string name="bottom_tab_settings">Cài đặt</string>
   <string name="home_welcome_back">Chào mừng quay trở lại!</string>
-  <string name="home_completed_tasks">Nhiệm vụ hoàn thành</string>
+  <string name="home_completed_tasks">Hoàn Thành Task</string>
   <string name="home_team_members">Thành viên</string>
   <string name="home_completed">Hoàn thành</string>
   <string name="home_ongoing_project">Các dự án đang làm</string>
@@ -45,4 +45,11 @@
   <string name="create_project_time_and_date">Thời gian &amp; ngày</string>
   <string name="create_project_add_new">Thêm task</string>
   <string name="create_project_create">Tạo</string>
+  <string name="details_project">Chi Tiết Dự Án</string>
+  <string name="details_project_due_date">Đến Hạn</string>
+  <string name="details_project_project_team">Thành Viên</string>
+  <string name="details_project_details">Chi Tiết</string>
+  <string name="details_project_progress">Tiến Trình</string>
+  <string name="details_project_all_tasks">Tất Cả Task</string>
+  <string name="details_project_add_task">Thêm Task</string>
 </resources>

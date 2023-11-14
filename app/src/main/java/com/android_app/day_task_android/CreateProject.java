@@ -1,4 +1,4 @@
-package com.android_app.day_task_android.create_project;
+package com.android_app.day_task_android;
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;

@@ -1,6 +1,5 @@
 package com.android_app.day_task_android.bottom_tabs.home;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -8,16 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.android_app.day_task_android.MainActivity;
+import com.android_app.day_task_android.DetailsProject;
 import com.android_app.day_task_android.R;
-import com.android_app.day_task_android.SignIn;
-import com.android_app.day_task_android.create_project.CreateProject;
+import com.android_app.day_task_android.CreateProject;
 import com.android_app.day_task_android.databinding.CardOnGoingProjectBinding;
 import com.android_app.day_task_android.databinding.ContentHomeBinding;
 import com.android_app.day_task_android.databinding.FragmentHomeBinding;
@@ -82,6 +79,10 @@ public class HomeFragment extends Fragment {
     ProgressBar progressBar = cardOnGoingProjectBinding.progress;
     progressBar.setProgress(90);
     progressBar.setMax(100);
+    cardOnGoingProjectBinding.card.setOnClickListener(v->{
+      Intent intent =new Intent(this.getActivity(), DetailsProject.class);
+      startActivity(intent);
+    });
   }
 
   private void bindingButtonAdd() {

@@ -44,9 +44,9 @@ android {
         "src/main/res/layouts/sign-up",
         "src/main/res/layouts/bottom-tabs",
         "src/main/res/layouts/create-project",
-        "src/main/res/layouts/detail-project",
+        "src/main/res/layouts/details-project",
         "src/main/res/layouts/create-task",
-        "src/main/res/layouts/detail-task",
+        "src/main/res/layouts/details-task",
       )
     }
   }

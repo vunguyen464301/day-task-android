@@ -33,7 +33,8 @@
 
     <activity android:name=".bottom_tabs.BottomTabs" />
 
-    <activity android:name=".create_project.CreateProject" />
+    <activity android:name=".CreateProject" />
+    <activity android:name=".DetailsProject" />
 
   </application>
 
